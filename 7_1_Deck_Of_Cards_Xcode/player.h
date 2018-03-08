@@ -9,13 +9,18 @@
 #include "deck.h"
 #include "utility.h"
 
+//TODO derive Player from Hand.  Make virtual functions of Hand
 class Player
 {
 public:
     Player(std::string s);
+    Player();
     Player(const Player &o);
     ~Player();
     void accept(Card c);
+    std::string getName();
+    int getScore();
+    void printHand();
 private:
     Hand phand;
     std::string name;

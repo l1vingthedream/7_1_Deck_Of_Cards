@@ -18,6 +18,7 @@ private:
     std::vector<Card> holding;
     int               score;
     void updateScore();
+    friend std::ostream& operator<<(std::ostream &os, Hand h);
 };
 
 

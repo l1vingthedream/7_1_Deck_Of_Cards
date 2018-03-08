@@ -17,6 +17,7 @@ private:
     face m_face;
     int  m_value;
     friend class Deck;
+    friend std::ostream& operator<<(std::ostream& os,Card c);
 };
 
 #endif /* card_hpp */

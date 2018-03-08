@@ -16,9 +16,14 @@ Player::Player(std::string s) : name(s), phand()
 {
 }
 
+Player::Player() : name(), phand()
+{
+}
+
 Player::Player(const Player &o) : name(o.name), phand(o.phand)
 {
 }
+
 
 Player::~Player() {}
 
@@ -27,7 +32,22 @@ void Player::accept(Card c)
     this->phand.addCard(c);
 }
 
+std::string Player::getName()
+{
+    return this->name;
+}
+
+int Player::getScore()
+{
+    return this->phand.getScore();
+}
+
+void Player::printHand()
+{
+    std::cout << *this << "(score) //  Hand is: " << std::endl << this->phand;
+}
+
 std::ostream& operator<<(std::ostream &os,Player p)
 {
-    return os << p.name << ": " << p.phand.getScore() << std::endl;
+    return os << p.name << ": " << p.phand.getScore();
 }

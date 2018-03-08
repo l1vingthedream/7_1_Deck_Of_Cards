@@ -43,8 +43,7 @@ void Deck::init()
 void Deck::print()
 {
     for (auto c : cards)
-        std::cout << c.getface() << " of " << c.getsuit() << " ("
-            << c.getvalue() << ")" << std::endl;
+        std::cout << c << std::endl;
 }
 
 void Deck::shuffle()

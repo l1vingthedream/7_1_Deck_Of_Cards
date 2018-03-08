@@ -9,4 +9,10 @@ suit Card::getsuit()  { return m_suit; }
 face Card::getface()  { return m_face; }
 int  Card::getvalue() { return m_value; }
 
-/*testing */
+std::ostream& operator<<(std::ostream &os, Card c)
+{
+    os << c.getface() << " of " << c.getsuit() << " ("
+    << c.getvalue() << ")" << std::endl;
+    return os;
+}
+
