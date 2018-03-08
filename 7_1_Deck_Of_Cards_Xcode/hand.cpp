@@ -19,9 +19,10 @@ Hand::Hand(const Hand &o) : holding(o.holding), score(o.score)
 
 void Hand::addCard(Card c)
 {
+    std::cout << "hand size before add: " << holding.size() << std::endl;
     this->holding.push_back(c);
     //TODO
-    std::cout << "hand size now: " << holding.size() << std::endl;
+    std::cout << "hand size after add:  " << holding.size() << std::endl;
     this->updateScore();
 }
 

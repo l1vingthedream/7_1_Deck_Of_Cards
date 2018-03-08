@@ -65,11 +65,11 @@ std::string Blackjack::stateMachine()
     {
         for (int i=0;i<2;i++)
         {
-            for (auto p : game_players)
+            for (int j=0;j<game_players.size();j++)
             {
-                p.accept(game_deck.deal());
+                game_players[j].accept(game_deck.deal());
                 //TODO:  show hand
-                p.printHand();
+                game_players[j].printHand();
             }
         }
         nextState = "player_reply";

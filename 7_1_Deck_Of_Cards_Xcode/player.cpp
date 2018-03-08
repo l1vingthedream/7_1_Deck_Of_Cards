@@ -44,7 +44,7 @@ int Player::getScore()
 
 void Player::printHand()
 {
-    std::cout << *this << "(score) //  Hand is: " << std::endl << this->phand;
+    std::cout << *this << ": " << std::endl << this->phand;
 }
 
 std::ostream& operator<<(std::ostream &os,Player p)

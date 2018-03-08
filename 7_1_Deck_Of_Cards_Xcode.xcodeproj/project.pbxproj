@@ -75,7 +75,6 @@
 		A1C40D422050905B00C2E940 /* 7_1_Deck_Of_Cards_Xcode */ = {
 			isa = PBXGroup;
 			children = (
-				A1C40D5C2050B60D00C2E940 /* blackjack.cpp */,
 				A1C40D5D2050B60D00C2E940 /* blackjack.h */,
 				A1C40D432050905C00C2E940 /* main.cpp */,
 				A1C40D4B205090A400C2E940 /* card.h */,
@@ -85,9 +84,10 @@
 				A1C40D5A2050A10500C2E940 /* player.h */,
 				A1C40D4D2050923000C2E940 /* utility.cpp */,
 				A1C40D5620509ED600C2E940 /* hand.cpp */,
+				A1C40D592050A10500C2E940 /* player.cpp */,
+				A1C40D5C2050B60D00C2E940 /* blackjack.cpp */,
 				A1C40D502050935E00C2E940 /* deck.cpp */,
 				A1C40D4A205090A400C2E940 /* card.cpp */,
-				A1C40D592050A10500C2E940 /* player.cpp */,
 			);
 			path = 7_1_Deck_Of_Cards_Xcode;
 			sourceTree = "<group>";
